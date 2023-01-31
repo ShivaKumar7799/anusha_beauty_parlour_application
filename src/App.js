@@ -2,7 +2,9 @@ import './App.css';
 
 function App() {
   return (
-    <h1>Anusha beauty parlour</h1>
+    <div>
+      <h1>Beauty parlour application</h1>
+    </div>
   );
 }
 
