@@ -44,8 +44,6 @@ const useStyles = makeStyles({
     }
   },
   contactInformation : {
-    // display : "flex",
-    // justifyContent : "space-around"
   }
 });
 
