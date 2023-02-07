@@ -1,0 +1,12 @@
+.mapOuter {
+  width : "100%";
+  padding : "10px"
+}
+.gmap_canvas {
+  display : "flex";
+  justify-content : "center"
+}
+.gmap_iframe {
+  width : "100%";
+  height : "400px"
+}

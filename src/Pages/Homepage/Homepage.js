@@ -4,56 +4,57 @@ import QuiltedImageList from './Gallery/Gallery'
 import NavBar from './NavBar/NavBar'
 import AlignItemsList from './Reviews/Reviews'
 import TimeLine from "./TimeLine/TimeLine"
-import { makeStyles } from "@mui/styles"
+// import { makeStyles } from "@mui/styles"
 import GoogleMap from './GoogleMap/GoogleMap'
 import Footer from './Footer/Footer'
+import './Homepage.css'
 
-const useStyles = makeStyles({
-  image_gallery : {
-    marginTop: "20px",
-    padding : "10px",
-    '@media (min-width: 1000px)': {
-        display: "flex",
-        justifyContent: "space-evenly",
-      }
-  },
-  homepage : {
-    backgroundColor: "blanchedalmond",
-  },
-  cards_layout : {
-    display: "flex",
-    justifyContent: "space-around",
-    flexWrap: "wrap",
-    rowGap: "30px",
-    '@media (max-width: 576px)': {
-      width : "100%",
-      display: "flex",
-      flexDirection : "column",
-      padding : "5%"
-    }
-  },
-  reviews : {
-    display: "flex",
-    justifyContent: "center",
-    padding: "20px",
-  },
-  image_gallery_content : {
-    float : "left",
-    '@media (min-width: 1000px)': {
-      width : "50%"
-    }
-  },
-  contactInformation : {
-  }
-});
+// const useStyles = makeStyles({
+//   image_gallery : {
+//     marginTop: "20px",
+//     padding : "10px",
+//     '@media (min-width: 1000px)': {
+//         display: "flex",
+//         justifyContent: "space-evenly",
+//       }
+//   },
+//   homepage : {
+//     backgroundColor: "blanchedalmond",
+//   },
+//   cards_layout : {
+//     display: "flex",
+//     justifyContent: "space-around",
+//     flexWrap: "wrap",
+//     rowGap: "30px",
+//     '@media (max-width: 576px)': {
+//       width : "100%",
+//       display: "flex",
+//       flexDirection : "column",
+//       padding : "5%"
+//     }
+//   },
+//   reviews : {
+//     display: "flex",
+//     justifyContent: "center",
+//     padding: "20px",
+//   },
+//   image_gallery_content : {
+//     float : "left",
+//     '@media (min-width: 1000px)': {
+//       width : "50%"
+//     }
+//   },
+//   contactInformation : {
+//   }
+// });
 
 function Homepage() {
-  const classes = useStyles()
+  // const classes = useStyles()
   return (
-    <div className={classes.homepage} >
+    <div className="homepage" >
       <NavBar />
-      <div className={classes.image_gallery} >
-        <div className={classes.image_gallery_content} >
+      <div className="image_gallery" >
+        <div className="image_gallery_content" >
           <h1>Anusha Beauty parlour</h1>
           <p>
           out Galaxy A23 5G’s #NoShakeCam, the coolest camera feature in town!
@@ -67,14 +68,14 @@ function Homepage() {
           Image used for representational purpose
           </p>
         </div>
-        <div className={classes.quiltedImageList} >
+        <div className="quiltedImageList" >
           <QuiltedImageList />
         </div>
       </div>
-      <div className={classes.TimeLine} >
+      <div className="TimeLine" >
         <TimeLine />
       </div>
-      <div className={classes.cards_layout} >
+      <div className="cards_layout" >
         <Cards />
         <Cards />
         <Cards />
@@ -84,14 +85,14 @@ function Homepage() {
         <Cards />
         <Cards />
       </div>
-      <div className={classes.reviews} >
+      <div className="reviews" >
         <AlignItemsList />
       </div>
-      <div className={classes.contactInformation} >
+      <div className="contactInformation" >
         <div>
           <h1>Contact Information</h1>
         </div>
-        <div className={classes.googleMap} >
+        <div className="googleMap" >
           <GoogleMap />
         </div>
       </div>

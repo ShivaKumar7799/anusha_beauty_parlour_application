@@ -1,0 +1,42 @@
+.image_gallery {
+  margin-bottom: "20px";
+  padding : "10px";
+}
+
+.homepage {
+  background-color: "blanchedalmond";
+  /* '@media (min-width: 1000px)': { 
+    display: "flex",
+    justifyContent: "space-evenly",
+  } */
+}
+
+.cards_layout {
+  display: "flex";
+  justify-content: "space-around";
+  flex-wrap: "wrap";
+  row-gap: "30px";
+  /* '@media (max-width: 576px)': {
+    width : "100%",
+    display: "flex",
+    flexDirection : "column",
+    padding : "5%"
+  }  */
+}
+
+.reviews {
+  display: "flex";
+  justify-content: "center";
+  padding: "20px";
+}
+
+.image_gallery_content {
+  float : "left",
+  /* '@media (min-width: 1000px)': {
+    width : "50%"
+  } */
+}
+.contactInformation {
+  background-color: aqua;
+}
+
