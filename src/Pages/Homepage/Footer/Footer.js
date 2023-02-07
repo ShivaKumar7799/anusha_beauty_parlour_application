@@ -1,16 +1,17 @@
 import React from 'react'
-import { makeStyles } from '@mui/styles'
+import './Footer.css'
+// import { makeStyles } from '@mui/styles'
 
-const useStyles = makeStyles({
-  footerContainer : {
-    textAlign : "center"
-  }
-})
+// const useStyles = makeStyles({
+//   footerContainer : {
+//     textAlign : "center"
+//   }
+// })
 
 function Footer() {
-  const classes = useStyles()
+  // const classes = useStyles()
   return (
-    <div className={classes.footerContainer} >
+    <div className="footerContainer" >
       <h1>Footer</h1>
     </div>
   )
