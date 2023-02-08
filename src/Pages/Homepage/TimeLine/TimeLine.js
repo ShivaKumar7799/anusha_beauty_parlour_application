@@ -22,7 +22,7 @@ export default function CustomizedTimeline() {
           variant="body2"
           color="text.secondary"
         >
-          9:30 am
+          All Types
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -33,7 +33,7 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Eat
+            SIGNATURE BRIDAL PACKAGE
           </Typography>
           <Typography>Because you need strength</Typography>
         </TimelineContent>
@@ -55,7 +55,7 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Code
+            PARTY MAKE OVER
           </Typography>
           <Typography>Because it&apos;s awesome!</Typography>
         </TimelineContent>
@@ -70,7 +70,7 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Sleep
+            HOME SERVICE
           </Typography>
           <Typography>Because you need rest</Typography>
         </TimelineContent>
@@ -85,7 +85,7 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Repeat
+            BEAUTICIAN TRAINING
           </Typography>
           <Typography>Because this is the life you love!</Typography>
         </TimelineContent>

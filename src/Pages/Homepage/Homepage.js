@@ -4,52 +4,47 @@ import QuiltedImageList from './Gallery/Gallery'
 import NavBar from './NavBar/NavBar'
 import AlignItemsList from './Reviews/Reviews'
 import TimeLine from "./TimeLine/TimeLine"
-// import { makeStyles } from "@mui/styles"
 import GoogleMap from './GoogleMap/GoogleMap'
 import Footer from './Footer/Footer'
 import './Homepage.css'
 
-// const useStyles = makeStyles({
-//   image_gallery : {
-//     marginTop: "20px",
-//     padding : "10px",
-//     '@media (min-width: 1000px)': {
-//         display: "flex",
-//         justifyContent: "space-evenly",
-//       }
-//   },
-//   homepage : {
-//     backgroundColor: "blanchedalmond",
-//   },
-//   cards_layout : {
-//     display: "flex",
-//     justifyContent: "space-around",
-//     flexWrap: "wrap",
-//     rowGap: "30px",
-//     '@media (max-width: 576px)': {
-//       width : "100%",
-//       display: "flex",
-//       flexDirection : "column",
-//       padding : "5%"
-//     }
-//   },
-//   reviews : {
-//     display: "flex",
-//     justifyContent: "center",
-//     padding: "20px",
-//   },
-//   image_gallery_content : {
-//     float : "left",
-//     '@media (min-width: 1000px)': {
-//       width : "50%"
-//     }
-//   },
-//   contactInformation : {
-//   }
-// });
+import Image1 from "../../Assets/Images/image1.jpg";
+
+const cardsImages = [
+  {
+    id : 1,
+    src : Image1,
+    title : "image 1"
+  },
+  {
+    id : 2,
+    src : Image1,
+    title : "image 1"
+  },
+  {
+    id : 3,
+    src : Image1,
+    title : "image 1"
+  },
+  {
+    id : 4,
+    src : Image1,
+    title : "image 1"
+  },
+  {
+    id : 5,
+    src : Image1,
+    title : "image 1"
+  },
+  {
+    id : 6,
+    src : Image1,
+    title : "image 1"
+  },
+
+]
 
 function Homepage() {
-  // const classes = useStyles()
   return (
     <div className="homepage" >
       <NavBar />
@@ -57,8 +52,7 @@ function Homepage() {
         <div className="image_gallery_content" >
           <h1>Anusha Beauty parlour</h1>
           <p>
-          out Galaxy A23 5G’s #NoShakeCam, the coolest camera feature in town!
-          Munugode bypoll: K Chandrasekhar Rao wields poach gate to bomb BJP in last lap
+          beauty spa, beauty-salon, beauty-shop, salon de beaute, salon, hairdresser, beauty-parlour, hair-salon, hair-dressing establishment, hairdressing salon and spa.
           </p>
           <p>
           Munugode bypoll: K Chandrasekhar Rao wields poach gate to bomb BJP in last lap
@@ -76,14 +70,7 @@ function Homepage() {
         <TimeLine />
       </div>
       <div className="cards_layout" >
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
+        {cardsImages.map((card,index) => <Cards src = {Image1} /> )}
       </div>
       <div className="reviews" >
         <AlignItemsList />

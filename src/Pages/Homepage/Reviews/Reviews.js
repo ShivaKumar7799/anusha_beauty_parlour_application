@@ -6,16 +6,39 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import Image12 from "../../../Assets/Images/image12.jpg"
+const peopleReviews = [
+  {
+    id : 1,
+    name : "Radha",
+    title : "Excellent Services",
+    comment : "I had an absolutely wonderful experience."
+  },
+  {
+    id : 2,
+    name : "Bhavani",
+    title : "Awesome",
+    comment : "The spa is clean and comfortable, I would like to thank you for your wonderful work."
+  },
+  {
+    id : 3,
+    name : "Soumya",
+    title : "Never seen before, Lovely experience",
+    comment : "I have never seen anyone as beautiful as you You make my heart melt."
+  },
+
+]
 
 export default function AlignItemsList() {
   return (
     <List sx={{ width: '100%', maxWidth: "100%", bgcolor: 'background.paper' }}>
-      <ListItem alignItems="flex-start">
+      { peopleReviews.map((review,index) => <>
+        <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={Image12} />
         </ListItemAvatar>
         <ListItemText
-          primary="Brunch this weekend?"
+          primary={review.title}
           secondary={
             <React.Fragment>
               <Typography
@@ -24,57 +47,15 @@ export default function AlignItemsList() {
                 variant="body2"
                 color="text.primary"
               >
-                Ali Connors
+                {review.name}
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+              {review.comment}
             </React.Fragment>
           }
         />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="Summer BBQ"
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-                to Scott, Alex, Jennifer
-              </Typography>
-              {" — Wish I could come, but I'm out of town this…"}
-            </React.Fragment>
-          }
-        />
-      </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="Oui Oui"
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-                Sandra Adams
-              </Typography>
-              {' — Do you have Paris recommendations? Have you ever…'}
-            </React.Fragment>
-          }
-        />
-      </ListItem>
+      </> ) }
     </List>
   );
 }
