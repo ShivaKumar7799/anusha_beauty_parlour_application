@@ -2,6 +2,17 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
+import Image2 from '../../../Assets/Images/image2.jpg'
+import Image6 from '../../../Assets/Images/image6.jpg'
+import Image13 from '../../../Assets/Images/image13.jpg'
+import Image15 from '../../../Assets/Images/image15.jpg'
+import Image5 from '../../../Assets/Images/image5.jpg'
+import Image7 from '../../../Assets/Images/image7.jpg'
+import Image8 from '../../../Assets/Images/image8.jpg'
+import Image10 from '../../../Assets/Images/image10.jpg'
+import Image14 from '../../../Assets/Images/image14.jpg'
+import Image16 from '../../../Assets/Images/image16.jpg'
+
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -34,61 +45,61 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: Image2,
     title: 'Breakfast',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: Image8,
+    title: '2',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: Image10,
+    title: '3',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: Image6,
     title: 'Coffee',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
+    img: "https://swall.teahub.io/photos/small/279-2793542_thumb-image-banner-beauty-parlour-images-hd.png",
+    title: '5',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: Image15,
+    title: '6',
     author: '@arwinneil',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: Image7,
+    title: '7',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: Image14,
+    title: '8',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+    img: Image13,
     title: 'Mushrooms',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: Image5,
+    title: '9',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
+    img: Image16,
+    title: '10',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNnv_M73cUZOwCukWXdx15Suc_OiJsqjZ9A&usqp=CAU',
+    title: '11 ',
     cols: 2,
   },
 ];
